@@ -33,11 +33,11 @@ const ProductCard = () => {
 	};
 
 	return (
-<section id="grid-area" className="container d-block  justify-content-center my-5">
+<section id="grid-area" className="container my-5">
 			<div className="container">
 				<div className="row">
 					{productList.map((p) => (
-						<div key={p.id}className="col-md-3 my-2 d-flex align-items-stretch">
+						<div key={p.id}className="col-md-3 my-2 d-flex align-items-center justify-content-center">
 							<div className="card">
 								<img className="card-img-top" src={p.imageUrl} alt="..." />
 								<div className="card-body">
