@@ -34,7 +34,7 @@ const ProductCard = () => {
 								<img className="card-img-top" src={p.imageUrl} alt="..." />
 								<div className="card-body">
 									<h6>{p.name}</h6>
-									<h6>R${p.price}</h6>
+									<h6>R$ {p.price}</h6>
 								</div>
 							</div>
 						</div>
