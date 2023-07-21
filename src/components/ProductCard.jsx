@@ -1,5 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import img1 from '../assets/product_1.jpg';
+import img2 from '../assets/product_2.jpg';
+import img3 from '../assets/product_3.jpg';
+import img4 from '../assets/product_4.jpg';
+import img5 from '../assets/product_5.jpg';
+import img6 from '../assets/product_6.jpg';
+import img7 from '../assets/product_7.jpg';
+import img8 from '../assets/product_8.jpg';
 
 const ProductCard = () => {
 	const [productList, setProductList] = useState([]);
@@ -11,14 +19,14 @@ const ProductCard = () => {
 	const init = () => {
 
 		const products = [
-			{	id: 1, name: 'Jaqueta Puffer Fur Seal', price: '599,00', imageUrl: '../src/assets/product_1.jpg',},
-			{ id: 2, name: 'Jaqueta Impermeável Darwin',	price: '699,00',	imageUrl: '../src/assets/product_2.jpg',},
-			{ id: 3, name: 'Colete Puffer Hermit Crab', price: '379,00', imageUrl: '../src/assets/product_3.jpg',},
-			{ id: 4, name: 'Jaqueta Corta Vento Nazca', price: '369,00', imageUrl: '../src/assets/product_4.jpg',},
-			{ id: 5, name: 'Mochila Pelican', price: '369,00', imageUrl: '../src/assets/product_5.jpg',},
-			{ id: 6, name: 'Mochila Albatross', price: '279,00', imageUrl: '../src/assets/product_6.jpg',},
-			{ id: 7, name: 'Garrafa Cascade 710ml', price: '149,00', imageUrl: '../src/assets/product_7.jpg',},
-			{ id: 8, name: 'Copo Cave de 350ml ', price: '99,00', imageUrl: '../src/assets/product_8.jpg',},
+			{	id: 1, name: 'Jaqueta Puffer Fur Seal', price: '599,00', imageUrl: `${img1}`,},
+			{ id: 2, name: 'Jaqueta Impermeável Darwin',	price: '699,00',	imageUrl: `${img2}`,},
+			{ id: 3, name: 'Colete Puffer Hermit Crab', price: '379,00', imageUrl: `${img3}`,},
+			{ id: 4, name: 'Jaqueta Corta Vento Nazca', price: '369,00', imageUrl: `${img4}`,},
+			{ id: 5, name: 'Mochila Pelican', price: '369,00', imageUrl: `${img5}`,},
+			{ id: 6, name: 'Mochila Albatross', price: '279,00', imageUrl: `${img6}`,},
+			{ id: 7, name: 'Garrafa Cascade 710ml', price: '149,00', imageUrl: `${img7}`,},
+			{ id: 8, name: 'Copo Cave de 350ml ', price: '99,00', imageUrl: `${img8}`,},
 		];
 
 		setProductList(products);

@@ -18,6 +18,9 @@ const Carousel = () => {
 					<div className="carousel-item">
 						<img src={img3} className="d-block w-100" alt="..." />
 					</div>
+					<div className="carousel-item">
+						<img src={img4} className="d-block w-100" alt="..." />
+					</div>
 				</div>
 				<button
 					className="carousel-control-prev"
