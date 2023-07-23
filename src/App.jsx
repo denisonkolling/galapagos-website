@@ -1,22 +1,28 @@
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Carousel from './components/Carousel'
-import './App.css'
-import BottomBanner from './components/BottomBanner'
-import ProductCard from './components/ProductCard'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import History from './pages/History';
+import Outlet from './pages/Outlet';
+import { Shop } from './pages/Shop';
+
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-
-
-  return (
-    <>
-      <Navbar />
-      <Carousel />
-      <BottomBanner />
-      <ProductCard />
-      <Footer />
-    </>
-  )
+	return (
+		<>
+			<Navbar />
+      <Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/about" element={<About />} />
+			<Route path="/history" element={<History />} />
+			<Route path="/outlet" element={<Outlet />} />
+			<Route path="/shop" element={<Shop />} />
+      </Routes>
+			<Footer />
+		</>
+	);
 }
 
-export default App
+export default App;

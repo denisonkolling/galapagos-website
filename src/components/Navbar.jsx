@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
@@ -20,25 +20,30 @@ const Navbar = () => {
 						className="collapse navbar-collapse flex-grow-0"
 						id="navbarNavDropdown">
 						<ul className="navbar-nav text-center  font-family-sans-serif">
+						<li className="nav-item h4 fw-bold mx-2">
+							<Link to="/" className="nav-link">
+									home
+								</Link>
+							</li>
 							<li className="nav-item h4 fw-bold mx-2">
-								<a className="nav-link" aria-current="page" href="#">
+							<Link to="/shop" className="nav-link">
 									shop
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item h4 fw-bold mx-2">
-								<a className="nav-link" href="#">
+							<Link to="/history" className="nav-link">
 									histórias
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item h4 fw-bold mx-2">
-								<a className="nav-link" href="#">
+								<Link to="/about" className="nav-link">
 									sobre
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item h4 fw-bold mx-2">
-								<a className="nav-link" href="#">
+							<Link to="/outlet" className="nav-link">
 									outlet
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item dropdown"></li>
 						</ul>
