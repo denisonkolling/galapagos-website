@@ -7,7 +7,7 @@ import {
 	faExchange,
 } from '@fortawesome/free-solid-svg-icons';
 
-const BottomBanner = () => {
+const BannerBottom = () => {
 	return (
 		<div className='container-fluid'>
 			<div className="container text-center pt-5">
@@ -34,4 +34,4 @@ const BottomBanner = () => {
 	);
 };
 
-export default BottomBanner;
+export default BannerBottom;

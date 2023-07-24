@@ -3,6 +3,7 @@ import img1 from '../assets/desktop_1.jpg';
 import img2 from '../assets/desktop_2.jpg';
 import img3 from '../assets/desktop_3.jpg';
 import img4 from '../assets/desktop_4.jpg';
+import img5 from '../assets/desktop_5.jpg';
 
 const Carousel = () => {
 	return (
@@ -20,6 +21,9 @@ const Carousel = () => {
 					</div>
 					<div className="carousel-item">
 						<img src={img4} className="d-block w-100" alt="..." />
+					</div>
+					<div className="carousel-item">
+						<img src={img5} className="d-block w-100" alt="..." />
 					</div>
 				</div>
 				<button

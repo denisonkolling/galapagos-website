@@ -5,6 +5,7 @@ import About from './pages/About';
 import History from './pages/History';
 import Outlet from './pages/Outlet';
 import { Shop } from './pages/Shop';
+import BannerTopPromo from './components/BannerTopPromo';
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
@@ -12,6 +13,7 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
 	return (
 		<>
+		<BannerTopPromo />
 			<Navbar />
       <Routes>
 			<Route path="/" element={<Home />} />
