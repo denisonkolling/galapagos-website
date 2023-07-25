@@ -13,8 +13,7 @@ const History = () => {
 			<div>
 				<img src={img} className="d-block w-100" alt="..." />
 			</div>
-      <CarouselCards />
-      <CategoryCard />
+
 		</div>
 	);
 };
