@@ -9,7 +9,7 @@ const Carousel = () => {
 	return (
 		<>
 			<div id="carouselExample" className="carousel slide">
-				<div className="carousel-inner">
+				<div className="carousel-inner p-0">
 					<div className="carousel-item active">
 						<img src={img1} className="d-block w-100" alt="..." />
 					</div>
