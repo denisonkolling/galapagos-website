@@ -8,7 +8,6 @@ import ProductCard from '../components/ProductCard';
 const Home = () => {
 	return (
 		<div>
-			
 			<Carousel />
 			<BannerBottom />
 			<ProductCard />
